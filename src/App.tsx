@@ -1,8 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
+  const backgroundColor = process.env.REACT_APP_backgroundcolour || "red";
+  console.log(backgroundColor);
+  document.body.style.backgroundColor = backgroundColor;
+
   return (
     <div className="App">
       <header className="App-header">
